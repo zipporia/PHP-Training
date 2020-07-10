@@ -23,9 +23,13 @@
                     $fileNameNew = "profile".$id.".".$fileActualExt;
                     $fileDestination = 'uploads/'.$fileNameNew;
                     move_uploaded_file($fileTmpName, $fileDestination);
-                    $sql = "UPDATE profileimg SET status=0 WEHERE userid='$id';";
-                    $result = mysqli_query($conn, $sql);
-                    header('Location: index.php?uploadsuccess');
+                    $sql = "UPDATE profileimg SET status=0 WHERE userid='$id';";
+                    if(mysqli_query($conn, $sql)){
+                        header('Location: index.php?uploadsuccess');
+                    }else{
+                        echo "Error while updating your profile";
+                    }
+                    
                 }else{
                     echo "Your file is to big";
                 }
