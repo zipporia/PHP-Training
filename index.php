@@ -7,6 +7,7 @@
     <head>
         <meta charset="utf-8" />
         <title>PHP Training</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <?php
@@ -19,13 +20,13 @@
                     $sqlImg = "SELECT * FROM profileimg WHERE userid='$id'";
                     $resultImg = mysqli_query($conn, $sqlImg);
                     while($rowImg = mysqli_fetch_assoc($resultImg)){
-                        echo "<div>";
+                        echo "<div class='user-container'>";
                             if($rowImg['status'] == 0){
                                 echo"<img src='uploads/profile".$id.".jpg'>";
                             }else{
                                 echo"<img src='uploads/profiledefault.jpg'>";
                             }
-                            echo $row['username'];
+                            echo "<p>".$row['username']."</p>";
                         echo "</div>";
                     }
                 }

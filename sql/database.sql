@@ -5,7 +5,7 @@ CREATE TABLE users(
     first varchar(256) not NULL,
     last varchar(256) not NULL,
     username varchar(256) not NULL,
-    password varchar(256) not NULL,
+    password varchar(256) not NULL
 );
 
 CREATE TABLE profileimg(
