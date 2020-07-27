@@ -7,9 +7,14 @@
 
 // Index Array syntax...
 // array(value1, value2, value3, ...);
-echo "Index Array"."<br>";
+echo "// Index Array"."<br>";
 $colors = array("red", "green", "blue");
-
+echo "For Loop"."<br>";
+for($i=0; $i < count($colors); $i++){
+    echo $colors[$i]."<br>";
+}
+echo"<br><br>";
+echo "Foreach"."<br>";
 foreach($colors as $color){
     echo $color."<br>";
 }
@@ -18,7 +23,7 @@ echo"<br><br>";
 
 // Associative Array syntax
 // array(key1 => value1, key2 => value2, key3 => value3, ...);
-echo "Associative Array"."<br>";
+echo "// Associative Array"."<br>";
 $color = array('1' => "red", '2' => "green", '3' => "blue");
 
 foreach($color as $keys => $values){
@@ -28,7 +33,7 @@ echo "<br><br>";
 // <========================>
 
 // Multidimensional Array
-echo "Multidimensional Array"."<br>";
+echo "// Multidimensional Array"."<br>";
 $color = array(
     'red' => array("Red item1", "Red Item2", "Red Item2"),
     'green' => array("Green1", "Geen2", "green3"),
