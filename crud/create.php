@@ -3,7 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <title>Add Member</title>
-    <link rel="stylesheet" href="php_action/style.css">
+    <style>
+        fieldset{
+            margin: auto;
+            margin-top: 50px;
+            width: 50%;
+        }
+
+        table tr th{
+            padding-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
