@@ -39,6 +39,8 @@
                                 </td>
                             </tr>";
                         }
+                    }else{
+                        echo "<td colspan='5'><center>---No Data Available---</center></td>";
                     }
                 ?>
             </tbody>
